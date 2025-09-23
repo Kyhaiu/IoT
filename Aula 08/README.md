@@ -1,22 +1,21 @@
-# Aula 07 - Introdução a Internet das Coisas (Bluetooth)
+# Aula 08 - Conexão e configuração Bluetooth (HC-05)
 
 ## Descrição
 
-Nesta aula, o foco é a introdução a **internet das coisas (IoT)**, iremos começar a trabalhar com comunicação sem fio, neste caso, comunicação **Bluetooth** com o sensor **HC-05**.
-O aluno irá aprender como controlar via Bluetooth o Arduino.
+Nesta aula, o foco é aprofundarmos mais no dispositivo **HC-05**, onde iremos aprender a mexer nas configurações do dispositivo, mudando nome, modo de atuação (_mestre_ e _escravo_).
 
 ---
 
 ## Exercícios
 
-1. **Interruptor via Bluetooth**  
-   Iremos controlar o estado do LED via aplicativo no celular
+1. **Configurar o HC-05**  
+   Vamos aprender a como configurar o HC-05 mudando seu nome e definindo o modo de atuação
 
-2. **Controlar um motor de passo via Bluetooth**
-   Vamos controlar um motor de passo via aplicativo no celular
+2. **Controlar outro Arduino via Bluetooth**
+   Vamos configurar um Arduino como **_mestre_** e outro como **_escravo_**, vamos configurar o mestre para se conectar especificamente a um **_escravo_**. E vamos fazer o LED do escravo piscar, depois vamos inverter os papeis.
 
-3. **Monitoramento "remoto" sensor**
-   Ao invés de monitorar os valores via monitoramento serial, vamos fazer isso via Bluetooth
+3. **Controlar outro Arduino via Bluetooth usando botão**
+   Vamos adicionar um botão ao circuito do exercício anterior
 
 ---
 
