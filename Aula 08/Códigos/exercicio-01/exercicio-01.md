@@ -21,7 +21,7 @@
 Enviar os comandos AT:
 AT           # Verifica comunicação, retorna OK
 AT+ROLE?     # Verifica em qual modo está operando
-AT+ROLE=2    # Define como mestre e escravo (funcionamento dual)
+AT+ROLE=0    # Define como mestre e escravo (funcionamento dual)
 AT+ADDR?     # Mostra o endereço Bluetooth (ex: 1234,56,ABCDEF)
 ```
 
@@ -31,7 +31,7 @@ AT+ADDR?     # Mostra o endereço Bluetooth (ex: 1234,56,ABCDEF)
 Enviar os comandos AT:
 AT                      # Verifica comunicação, retorna OK
 AT+ROLE?                # Verifica em qual modo está operando
-AT+ROLE=2               # Define como mestre e escravo (funcionamento dual)
+AT+ROLE=1               # Define como mestre e escravo (funcionamento dual)
 AT+CMODE=0              # Conecta apenas a 1 dispositivo específico (força ele a assumir o papel de mestre)
 AT+BIND=1234,56,ABCDEF  # Endereço do escravo obtido acima
 ```
