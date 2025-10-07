@@ -4,6 +4,9 @@ const devices: Device[] = [];
 
 export const registerDevice = (id: string, name?: string) => {
   let device = devices.find((d) => d.id === id);
+
+  console.log(device);
+
   if (!device) {
     device = {
       id: id,
