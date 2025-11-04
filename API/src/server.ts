@@ -12,7 +12,9 @@ app.use(express.json());
 app.use("/device", deviceRoutes);
 
 app.listen(PORT, HOST, () => {
-  console.log(`API running at http://${HOST}:${PORT}`);
+  console.log(
+    `API running at http://${HOST === "0.0.0.0" ? "localhost" : HOST}:${PORT}`
+  );
 });
 
 export default app;
