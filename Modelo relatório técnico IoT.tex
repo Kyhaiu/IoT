@@ -1,0 +1,259 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx} % Para inserir imagens
+\usepackage{listings} % Para inserir código
+\usepackage{xcolor} % Para colorir código
+\usepackage{hyperref} % Para links
+
+% =============================================
+% CONFIGURAÇÕES - NÃO ALTERAR
+\geometry{a4paper, margin=2.5cm}
+\setstretch{1.3}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+% Configuração para código
+\lstset{
+    basicstyle=\ttfamily\small,
+    commentstyle=\color{green!40!black},
+    keywordstyle=\color{blue}\bfseries,
+    frame=single,
+    breaklines=true,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    showstringspaces=false,
+    language=C++,
+}
+
+% Configuração de links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+% =============================================
+
+% =============================================
+% PREENCHA ESTA SEÇÃO COM OS DADOS DO SEU GRUPO
+% =============================================
+\newcommand{\tituloDoProjeto}{[TÍTULO DO SEU PROJETO AQUI]}
+\newcommand{\nomeAlunoA}{[Nome Completo do Aluno A]}
+\newcommand{\nomeAlunoB}{[Nome Completo do Aluno B]}
+\newcommand{\nomeAlunoC}{[Nome Completo do Aluno C]}
+\newcommand{\nomeProfessor}{[Nome do Professor]}
+\newcommand{\nomeDisciplina}{[Nome da Disciplina]}
+\newcommand{\dataEntrega}{[DD/MM/AAAA]}
+% =============================================
+
+\begin{document}
+
+% =============================================
+% CAPA - PREENCHA OS CAMPOS ACIMA
+% =============================================
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\huge\bfseries \tituloDoProjeto\par}
+    
+    \vspace{2cm}
+    {\Large Trabalho Prático de Internet das Coisas\par}
+    
+    \vspace{1.5cm}
+    {\large
+    \begin{tabular}{c}
+        \nomeAlunoA \\
+        \nomeAlunoB \\
+        \nomeAlunoC
+    \end{tabular}\par}
+    
+    \vfill
+    
+    {\large Professor: \nomeProfessor\par}
+    {\large \nomeDisciplina\par}
+    {\large Data de Entrega: \dataEntrega\par}
+    
+    \vspace{2cm}
+\end{titlepage}
+
+
+% =============================================
+% SUMÁRIO (OPCIONAL - REMOVA SE NÃO QUISER)
+% =============================================
+\tableofcontents
+\newpage
+
+
+% =============================================
+% SEÇÃO 1: INTRODUÇÃO 
+% INSTRUÇÕES: Explique o contexto e motivação do projeto
+% =============================================
+\section{Introdução (OBRIGATÓRIO)}
+
+% EXEMPLO:
+% O sistema proposto visa monitorar a qualidade do ar em ambientes internos
+% de escolas, alertando sobre excesso de CO2 e umidade inadequada.
+
+[ESCREVA AQUI A INTRODUÇÃO DO SEU PROJETO. Explique:
+- Qual problema você está resolvendo?
+- Por que este problema é importante?
+- Qual a solução proposta?]
+
+
+% =============================================
+% SEÇÃO 2: OBJETIVOS
+% INSTRUÇÕES: Liste o que você pretende alcançar
+% =============================================
+\section{Objetivos (OBRIGATÓRIO)}
+
+\subsection{Objetivo Geral}
+[Defina aqui o objetivo principal. Ex: "Desenvolver um sistema de monitoramento de temperatura e umidade para estufas agrícolas com alertas automatizados."]
+
+\subsection{Objetivos Específicos}
+\begin{itemize}
+    \item Descreva o objetivo específico 1. Ex: "Coletar dados de temperatura e umidade a cada 5 minutos."
+    \item Descreva o objetivo específico 2. Ex: "Implementar comunicação Wi-Fi para envio de dados."
+    \item Descreva o objetivo específico 3. Ex: "Criar dashboard web para visualização em tempo real."
+    \item Adicione mais itens conforme necessário.
+\end{itemize}
+
+
+% =============================================
+% SEÇÃO 3: REQUISITOS TÉCNICOS
+% INSTRUÇÕES: Liste todos os componentes utilizados
+% =============================================
+\section{Requisitos Técnicos (OBRIGATÓRIO)}
+
+INSTRUÇÕES: Liste todos os componentes utilizados
+
+\subsection{Hardware}
+\begin{itemize}
+    \item \textbf{Microcontrolador}: [Ex: ESP32 DevKit V1]
+    \item \textbf{Sensores}: [Ex: DHT22 (temperatura/umidade), MQ-135 (qualidade do ar)]
+    \item \textbf{Atuadores}: [Ex: LED RGB, Buzzer (alertas sonoros)]
+    \item \textbf{Componentes}: [Ex: Protoboard 400 pontos, Resistores 330Ω, Jumpers, Fonte 5V]
+\end{itemize}
+
+\subsection{Software}
+\begin{itemize}
+    \item \textbf{IDE}: [Ex: Arduino IDE 2.0]
+    \item \textbf{Linguagem}: [Ex: C++]
+    \item \textbf{Protocolos}: [Ex: MQTT via Wi-Fi]
+    \item \textbf{Plataforma}: [Ex: Adafruit IO + ThingSpeak]
+    \item \textbf{Bibliotecas}: [Ex: DHT.h, PubSubClient.h, WiFi.h]
+\end{itemize}
+
+
+% =============================================
+% SEÇÃO 4: ARQUITETURA DO SISTEMA 
+% INSTRUÇÕES: Descreva o fluxo de dados e inclua diagramas
+% =============================================
+\section{Arquitetura do Sistema (OPCIONAL)}
+
+% INSTRUÇÃO: Insira um diagrama de blocos aqui
+% Para adicionar imagem: descomente e ajuste o caminho
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.8\textwidth]{caminho/para/seu/diagrama.png}
+% \caption{Diagrama de Blocos do Sistema}
+% \label{fig:diagrama}
+% \end{figure}
+
+\textbf{Descrição do Fluxo}:
+[Ex: "Os sensores DHT22 e MQ-135 coletam dados que são lidos pelo ESP32 a cada 5 minutos. O microcontrolador processa os valores e publica via MQTT no tópico 'sala01/dados'. O Adafruit IO recebe os dados e exibe em dashboard, além de enviar alertas por e-mail quando os valores ultrapassam limites."]
+
+\textbf{Arquitetura da Rede}:
+[Descreva como os dispositivos se comunicam. Inclua IP, portas, topologia, etc.]
+
+
+% =============================================
+% SEÇÃO 5: DESENVOLVIMENTO
+% INSTRUÇÕES: Detalhe a implementação
+% =============================================
+\section{Desenvolvimento (OBRIGATÓRIO)}
+
+\subsection{Esquemático do Circuito}
+% INSTRUÇÃO: Insira o esquemático elétrico aqui
+% Use fotos, screenshots ou diagramas feitos com Fritzing, Tinkercad, etc.
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=\textwidth]{caminho/para/esquematico.png}
+% \caption{Esquemático do Circuito}
+% \label{fig:esquematico}
+% \end{figure}
+
+[Liste as conexões dos pinos. Ex: "DHT22: VCC → 3.3V, GND → GND, DATA → GPIO 4"]
+
+\subsection{Código Fonte (OBRIGATÓRIO)}
+% INSTRUÇÃO: Insira trechos importantes do código
+% Para código curto (< 1 página), cole diretamente:
+\begin{lstlisting}[caption=Exemplo de leitura de sensor]
+// [COLE SEU CÓDIGO AQUI COMENTADO]
+// Exemplo:
+#include <WiFi.h>
+#include <PubSubClient.h>
+
+void setup() {
+  Serial.begin(115200);
+  // Inicialize seus componentes
+}
+\end{lstlisting}
+
+% Para código extenso, coloque apenas os trechos mais importantes
+% e faça referência ao arquivo completo no GitHub
+
+\textbf{Repositório com Código Completo}: \url{[LINK DO SEU REPOSITÓRIO NO GITHUB]}
+
+
+% =============================================
+% SEÇÃO 5: TESTES E RESULTADOS
+% INSTRUÇÕES: Mostre que o sistema funciona
+% =============================================
+\section{Testes e Resultados (OBRIGATÓRIO)}
+
+\subsection{Procedimentos de Teste}
+[Descreva como testou. Ex: "Deixei o sistema operando por 72h, coletando dados a cada 5 min. Testes de estresse foram feitos expondo sensores a condições extremas."]
+
+\subsection{Resultados Obtidos}
+% INSTRUÇÃO: Inclua tabelas ou gráficos dos dados
+% \begin{table}[h]
+% \centering
+% \caption{Dados coletados durante 24h}
+% \begin{tabular}{|c|c|c|c|}
+% \hline
+% Horário & Temperatura (°C) & Umidade (\%) & CO2 (ppm) \\
+% \hline
+% 08:00 & 23.5 & 65 & 450 \\
+% \hline
+% \end{tabular}
+% \end{table}
+
+[Analise os resultados. Ex: "O sistema manteve 98\% de uptime. Latência média de envio: 2.3s."]
+
+\subsection{Problemas Encontrados e Soluções}
+\begin{itemize}
+    \item \textbf{Problema}: [Ex: "DHT22 retornava valores erráticos."]
+    \item \textbf{Solução}: [Ex: "Adicionado capacitor de 100nF entre VCC e GND."]
+\end{itemize}
+
+
+% =============================================
+% POR FAVOR, LEIA AS DICAS ABAIXO ANTES DE ENTREGAR:
+% =============================================
+
+% DICAS IMPORTANTES:
+% 1. REMOVA todos os textos em [MAIÚSCULAS] e coloque seu conteúdo
+% 2. REMOVA os comentários de instrução (linhas que começam com %)
+% 3. VERIFIQUE se todas as imagens estão no caminho correto
+% 4. TESTE a compilação antes da entrega final
+% 5. NOMEIE o arquivo: TRABALHO_IOT_GRUPO_X_NOMES.pdf
+
+\end{document}
