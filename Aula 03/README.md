@@ -1,15 +1,22 @@
-# Aula 03 - Sinais Digitais vs Sinais Analógicos
+# Aula 04 - Botões e Potenciômetro
 
 ## Descrição
 
-Nesta aula, o foco é entender as diferenças entre **sinais analógicos** e **sinais digitais**, por meio da utilização de potenciômetro no controle de LEDs.
-O aluno(a) irá aprender como ler entradas analógicas e realizar a conversão para um sinal digital e como utilizar estes valores para controlar seu circuito.
+Nesta aula, o foco é o uso de **botões** e **potenciômetros** para controle de entradas no Arduino.  
+O aluno irá aprender como ler sinais digitais e analógicos e utilizá-los para controlar o comportamento de LEDs.
 
 ---
 
 ## Exercícios
 
-Em breve
+1. **Ler o valor de um potenciômetro e exibir no monitor serial**  
+   O valor analógico será lido e exibido continuamente no Serial Monitor.
+
+2. **Controlar a velocidade com a qual o LED pisca**  
+   O potenciômetro define o tempo de delay do LED.
+
+3. **Acender o LED com botão e controlar a velocidade de piscar**  
+   O botão controla o estado do LED, enquanto o potenciômetro controla a velocidade de piscada.
 
 ---
 
@@ -17,9 +24,10 @@ Em breve
 
 - Arduino Uno (ou compatível)
 - Protoboard
-- LEDs
-- Resistores (220Ω ou 330Ω ou 1KΩ)
-- Potenciômetro
+- LED
+- Resistores (220Ω ou 330Ω)
+- Botão (push button)
+- Potenciômetro (10kΩ recomendado)
 - Jumpers (macho-macho)
 - Cabo USB para conexão ao computador
 
